@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+    Fuentes:
+    font-family: 'Michroma', sans-serif;
+    font-family: 'Gugi', cursive;
+*/
+
+:root{        
+    --negro: #000000;    
+    --blanco: #FFFFFF;    
+    --amarillo: yellow;
+    --violetaOscuro: rgba(53, 1, 64, 1);
+    font-size: 10px;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+
+    background-color: var(--negro);    
+    outline-color: invert;
+    outline-style: 2px solid var(--blanco);
+}
+
+.img_logo{
+    margin: auto;
+    display: block;
+    border-radius: 2%;    
+}
+
+.botonera{
+    list-style: none;/* Eliminamos a la lista el puntito */
+    display: flex;
+}
+
+.botonera li{
+    font-family: 'Michroma', sans-serif;
+    flex-grow: 1;
+    margin-top: 3px;    
+}
+
+.botonera a{    
+    background: -moz-linear-gradient(top, #FFFFFF, violet);
+    text-align: center;
+    display: block;    
+    color: mediumblue;
+    text-shadow:rgba(0,0,0,.5) 3px 3px 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5%;
+    width: 125px;
+    height: 40px;
+    padding-top: 10px;
+    transition: box-shadow 100ms ease-in-out; /* El transition va en el objeto anterior a la transicion*/
+    margin: auto;    
+}
+
+.botonera a:hover{
+    text-decoration: underline;   
+    box-shadow: 5px 5px 5px 5px rgba(238, 130, 238,0.5);/* Sombra alrededor de la caja */ 
+}
+
+/*
+.botonera a:visited {
+   color: var(--amarillo);
+}
+*/
+
+/*----------------------------------------------------------------------
+    Subtitulos
+-----------------------------------------------------------------------*/
+.subtitulos{
+    font-family: 'Michroma', sans-serif;
+    display: flex;
+    height: 50px;
+    margin: auto;
+    font-size: 1.4rem;
+}
+
+.subtitulo_1{
+    float:left;
+    width: 70%;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: rgb(249,245,215);
+    text-shadow:rgb(204,148,73) 6px 6px 4px;    
+    text-decoration: white;    
+}
+
+.subtitulo_2{
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(249,254,250);
+    text-shadow:rgb(154,225,164) 6px 6px 4px;
+    text-decoration: white;    
+}
+
+/*----------------------------------------------------------------------
+    Cuerpo
+-----------------------------------------------------------------------*/
+.cuerpo{
+    display: flex;
+    margin: auto;
+}
+
+.cuerpo_juegos{    
+    float: left;    
+    width: 75%;
+    height: 100%;
+    margin: 20px 0px 50px 10px;
+    border: 5px solid rgb(249,254,250);    
+}
+
+.c{
+    float: left;
+    width: 24.9%;
+    height: 100%;
+    text-align: center;
+    transition: transform 500ms linear;
+}
+
+.c:hover{
+    transform: scale(1.2);    
+}
+
+.cuerpo_novedades{
+    font-family: 'Gugi', cursive;
+    float: left;
+    width: 22%;
+    height: 100%;    
+    margin-top: 20px;
+    margin-left: 10px;    
+    background-color: var(--violetaOscuro);
+}
+
+.subtitulo_novedades{
+    text-align: left;
+    font-size: 1.4rem;    
+    color: rgb(249,245,215);
+    text-shadow:rgb(246, 123, 22) 6px 6px 4px;
+    margin-left: 10px;    
+}
+
+.cuerpo_novedades p{
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+    font-size: 1.2rem;
+    color: var(--blanco);
+    font-style: bold;
+    padding: 10px 10px 10px 10px;
+    /*line-height: 2; /* Define el espacio entre renglones */
+}
+
+/*----------------------------------------------------------------------
+    Seteos para los form de ingreso de datos
+    login - usuario - contacto - genero - juego
+------------------------------------------------------------------------*/
+.ingreso_datos{ /*.contacto{*/
+    font-family: 'Michroma', sans-serif;
+    color: var(--blanco);
+    width: 97%;
+    margin-left: 10px;
+    background-color: var(--violetaOscuro);
+    border-radius: 1%;
+    padding: 0px 10px 0 10px;
+}
+
+.ingreso_datos h1{ /*.contacto h1{*/
+    margin-top: 30px;
+    margin-left: 15px;
+
+    font-family: 'Michroma', sans-serif;
+    font-size: 2.5rem;
+
+    color: rgb(249,245,215);
+    text-shadow:rgb(204,148,73) 6px 6px 4px;    
+    text-decoration: white;
+}
+
+.ingreso_datos label,input,textarea, select{ /*.contacto label,input,textarea{*/
+    margin-left: 15px;
+
+    font-family: 'Michroma', sans-serif;
+    font-size: 2rem;
+
+    width: 800px; 
+}
+
+.btn_contacto{
+    width: 190px;
+    font-size: 1.7rem;
+}
+
+.ingreso_datos :focus { /*.contacto :focus{*/
+    background-color:  violet;    
+  }
+
+/*----------------------------------------------------------------------
+    Pie de la página    
+----------------------------------------------------------------------*/
+.pie{    
+    font-family: 'Michroma', sans-serif;    
+    color: var(--blanco);            
+    width: 97%;    
+    border-top: 5px solid violet;
+    margin-left: 10px;
+    
+    background-color: var(--violetaOscuro);
+    border-radius: 1%;
+    padding: 10px 10px 10px 10px;
+    letter-spacing: 2px; /* Define el espaciado entre letras */
+    /*word-spacing: 5px;*/ /* Define el espaciado entre palabras */
+    text-align: center;
+}
+
+.pie h1{    
+    margin-top: 5px;  
+    margin-left: 15px;  
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+.pie p{
+    margin-left: 15px;
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.pie .arriba{            
+    color: red;
+    font-size: 1.3rem;    
+}
+
+.pie .miracle_creado_por{
+    color: var(--amarillo);
+}
+
+.key {    
+    display:inline;
+    background: -moz-linear-gradient(top, #FFFFFF, violet);
+    text-align: center;    
+    color: mediumblue;
+    font-size: 1.4rem;    
+    font-weight: bold;
+    text-decoration: none;
+
+    border-radius: 5%;
+    margin-left: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/*----------------------------------------------------------------------
+    Pagina de juego
+----------------------------------------------------------------------*/
+.help{    
+    height: 120px;    
+    margin: 0px 0px 0px 0px;
+    padding: 30px 10px 30px 10px;
+    font-family: 'Gugi', cursive;
+    font-size: 1.4rem;
+    text-align: left;
+    color: var(--blanco);
+}
+
+.juego {    
+    border: 2px solid var(--amarillo);
+    margin: 20px 0 20px 10px;
+    width: 512px;
+    height: 384px;
+}
+
+.key_2 {    
+    display:inline;
+    background: var(--blanco);
+    text-align: center;
+    color: var(--negro);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    border-radius: 5%;
+    margin-left: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+#screen {
+	/* 
+		Cambiar estos parametros para hacer mas grande o 
+		mas chica la pantalla del juego
+	*/	
+	width: 512px;
+    height: 384px;
+}
+
+/*----------------------------------------------------------------------------------------
+    Responsive iPad 768px1024px
+    Cambió el menú por uno mas compacto de 1 columna
+    Cambio el listado de los juegos x 2 columnas
+    Adapto tamaños de fuentes usar rem y em
+------------------------------------------------------------------------------------------*/
+/*@media(max-width: 768px){*/
+@media(max-width: 1000px){
+
+    .cabecera{
+        max-width: 768px;        
+    }
+
+    .img_logo{        
+        width: 90%;        
+    }
+
+    .botonera{
+        list-style: none;/* Eliminamos a la lista el puntito */
+        max-width: 768px;
+        margin: auto;
+        display: block;
+    }
+
+    .c{
+        float: left;
+        width: 50%;
+        text-align: center;
+        transition: transform 500ms linear;
+    } 
+
+    #screen {
+        width: 332.8px;
+        height: 249.6px;
+    }
+
+    .juego {    
+        border: 2px solid var(--amarillo);
+        margin: 50px 0 20px 10px;
+        width: 332.8px;
+        height: 249.6px;
+    }    
+
+    .pie{
+        width: 90%;
+    }
+
+    .contacto h1{
+        font-size: 1.6rem;
+    }
+
+    .contacto{
+        width: 90%;
+    }
+    .contacto label,input,textarea{
+        width: 90%;
+        font-size: 1.4rem;
+    }
+}
+
+
+
+/*----------------------------------------------------------------------
+    Listados!!!
+-----------------------------------------------------------------------*/
+.btn_nuevo{
+
+    background-color: green;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 10%;
+
+    font-family: 'Michroma', sans-serif;
+    font-size: 20px;
+}
+
+.btn_actualizar{
+    /*    
+	background-color: green;
+	color: white;
+    border: 1px solid white;
+    border-radius: 20%;
+    */
+}
+
+.btn_borrar{
+    /*
+	background-color: red;
+	color: white;
+    border: 1px solid white;
+    border-radius: 20%;
+    */
+}
+
+.cuerpo_listado{    
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+table{
+    font-family: 'Michroma', sans-serif;
+	border: 1px solid white;
+    font-size: 16px;    
+}
+
+td{
+    padding: 2px 4px;
+}
+
+/* Encabezado de la tabla */
+tr:first-child{
+    font-weight: bold;
+    background-color: violet;
+	color:white;
+	text-align: center;
+}
+
+/* Filas impares de la tabla */
+tr:nth-child(2n+3){
+    background-color: grey;
+}
+/* Filas pares de la tabla */
+tr:nth-child(2n+2){
+    background-color: gainsboro;
+}
+
+/*----------------------------------------------------------------------
+    Botones de paginacion!!!
+-----------------------------------------------------------------------*/
+.botonera_nav {
+    margin: 20px 0px 20px 0;
+}
+
+.botonera_pag{
+    list-style: none;/* Eliminamos a la lista el puntito */
+    display: flex;
+}
+
+.botonera_pag li{
+    /* font-family: 'Michroma', sans-serif; */
+    flex-grow: 1;
+    margin-top: 3px;        
+}
+
+.botonera_pag a{
+    float: left;
+    transition: transform 100ms linear;
+}
+
+.botonera_pag a:hover{
+    transform: scale(1.4);
+}
+
+
+
+/*----------------------------------------------------------------------
+    Forms!!!
+-----------------------------------------------------------------------*/
+
+.btn_guardar{
+
+    background-color: green;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 10%;
+
+    font-family: 'Michroma', sans-serif;
+    font-size: 20px;
+}
+
+.formJuego{
+    color: white;
+    font-family: 'Michroma', sans-serif;
+    font-size: 20px;   
+}
+
+.lbl_form{
+    font-family: 'Michroma', sans-serif;
+    font-size: 20px;   
+}
+
