@@ -44,7 +44,8 @@ body {
 }
 
 .botonera a{    
-    background: -moz-linear-gradient(top, #FFFFFF, violet);
+    /*background: -moz-linear-gradient(top, #FFFFFF, violet);*/
+    background: linear-gradient(to top, #FFFFFF, violet);
     text-align: center;
     display: block;    
     color: mediumblue;
@@ -246,7 +247,8 @@ body {
 
 .key {    
     display:inline;
-    background: -moz-linear-gradient(top, #FFFFFF, violet);
+    /*background: -moz-linear-gradient(top, #FFFFFF, violet);*/
+    background: linear-gradient(to top, #FFFFFF, violet);
     text-align: center;    
     color: mediumblue;
     font-size: 1.4rem;    
