@@ -28,7 +28,7 @@
 
         //No ovidarme de obtener esta info de la base mysql!
         $mail->Username = 'z80max300@hotmail.com';
-        $mail->Password = 'Nextel.7136';
+        $mail->Password = 'cxcxcxcxcxcx';
         
         $mail->SMTPSecure = 'STARTTLS';
         $mail->Port = 587;
